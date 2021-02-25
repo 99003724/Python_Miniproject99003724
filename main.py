@@ -2,6 +2,7 @@ import re
 
 
 class SearchInputWord:
+    # Constructor
     def __init__(self, search_word):
         # open and read the text file.
         self.file_in = open(".txt", "r").read()
@@ -26,7 +27,7 @@ class SearchInputWord:
                 s_f = (sp_t[i-1] + " " + sp_t[i] + " " + sp_t[i+1] + "\n")
                 # printing the line where the input word occurs.
                 new_out_file.writelines(str(s_f))
-
+        new_out_file.close()
 
 # Main Function of the program.
 if __name__ == "__main__":
