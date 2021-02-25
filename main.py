@@ -19,7 +19,7 @@ class SearchInputWord:
         new_out_file.write(str("\n"))
         sp_t = self.file_in.split()
         # Using loop to find the words before and after the input word.
-        for i in range(len(split_text)):
+        for i in range(len(sp_t)):
             match = re.match(self.search_word, sp_t[i], re.M | re.I)
             if match:
                 count += 1
