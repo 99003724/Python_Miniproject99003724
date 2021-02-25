@@ -1,8 +1,9 @@
-import re
+import re   # import regular expression
 
 
 class SearchInputWord:
-    # Constructor
+    # Constructor created
+
     def __init__(self, search_word):
         # open and read the text file.
         self.file_in = open(".txt", "r").read()
@@ -18,7 +19,7 @@ class SearchInputWord:
         new_out_file.write("count of word: ")
         new_out_file.write(str(len(num_out)))
         new_out_file.write(str("\n"))
-        sp_t = self.file_in.split()
+        sp_t = self.file_in.split()   # Split input text file.
         # Using loop to find the words before and after the input word.
         for i in range(len(sp_t)):
             match = re.match(self.search_word, sp_t[i], re.M | re.I)
