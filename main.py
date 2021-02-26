@@ -44,6 +44,7 @@ class SearchInputWord:
 # Main Function of the program.
 if __name__ == "__main__":
     # loop to find 5 words from the text file.
+    print("--------5 words to search from the text file--------")
     for x in range(5):
         word_search = input("Enter the word to search : ")
         sw = SearchInputWord(word_search)
