@@ -4,6 +4,7 @@ Author : Archita Modi
 PS No : 99003724
 Contact : archita.modi@ltts.com
 Date of creation : 25.02.2021
+Description: To find 5 words from the input text file.
 
 '''
 
@@ -44,7 +45,7 @@ class SearchInputWord:
 if __name__ == "__main__":
     # loop to find 5 words from the text file.
     for x in range(5):
-        word_search = input("Enter the word: ")
+        word_search = input("Enter the word to search : ")
         sw = SearchInputWord(word_search)
         sw.search_word_inf()
         print("\n")
