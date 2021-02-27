@@ -42,6 +42,8 @@ class SearchInputWord:
         new_out_file.close()
 
 # Main Function of the program.
+
+
 if __name__ == "__main__":
     # loop to find 5 words from the text file.
     print("--------5 words to search from the text file--------")
